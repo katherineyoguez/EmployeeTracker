@@ -1,6 +1,6 @@
-USE employees_tracker_db;
+USE employee_tracker_db;
 
-INSERT INTO department (name)
+INSERT INTO departments (name)
 VALUES
 ('Front End'),
 ('Apparel'),
@@ -8,7 +8,7 @@ VALUES
 ('Outdoors Department'),
 ('Bike Repair');
 
-INSERT INTO role (title, salary, department_id)
+INSERT INTO roles (title, salary, department_id)
 VALUES
 ('Cashier', 25000, 1),
 ('Sales Associate', 30000, 2),
@@ -17,10 +17,10 @@ VALUES
 ('Manager', 50000, 5);
 
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-('Arya', 'Stark', 1, 10),
-('Jon', 'Snow', 2, 11),
-('Daenerys', 'Targaryen', 3, 12),
-('Cersei', 'Lannister', 4, 13),
-('Khal', 'Drogo', 5, 14);
+('Arya', 'Stark', 1, 5),
+('Jon', 'Snow', 2, 5),
+('Daenerys', 'Targaryen', 3, 5),
+('Cersei', 'Lannister', 4, 5),
+('Khal', 'Drogo', 5, 5);

@@ -5,5 +5,24 @@
     "install": "^0.13.0",
     "mysql": "^2.18.1",
     "start": "^5.1.0"
-  }
+  },
+  "name": "employeetracker",
+  "description": "",
+  "version": "1.0.0",
+  "main": "employeetracker.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "start": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katherineyoguez/EmployeeTracker.git"
+  },
+  "author": "myself",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katherineyoguez/EmployeeTracker/issues"
+  },
+  "homepage": "https://github.com/katherineyoguez/EmployeeTracker#readme"
 }
