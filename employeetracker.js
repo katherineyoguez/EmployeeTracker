@@ -15,11 +15,6 @@ connection.connect(function (err) {
     runSearch();
 });
 
-//   * Update employee roles
-//UPDATE employee
-//SET role_id = ?
-//WHERE employee.id = ?
-
 const runSearch = () => {
     inquirer
         .prompt({
@@ -82,7 +77,7 @@ const runSearch = () => {
 const viewDepts = () => {
     connection.query("SELECT * FROM departments", (err, res) => {
       if (err) throw err;
-      console.log(res)
+      // console.log(res)
       console.table(res);
       runSearch();
     });
@@ -91,7 +86,7 @@ const viewDepts = () => {
   const viewRoles = () => {
     connection.query("SELECT * FROM roles", (err, res) => {
       if (err) throw err;
-      console.log(res)
+      // console.log(res)
       console.table(res);
       runSearch();
     });
@@ -100,7 +95,7 @@ const viewDepts = () => {
   const viewEmployees = () => {
     connection.query("SELECT * FROM employees", (err, res) => {
       if (err) throw err;
-      console.log(res)
+      // console.log(res)
       console.table(res);
       runSearch();
     });
@@ -119,7 +114,7 @@ const viewDepts = () => {
 
           connection.query(queryString, [newDep], (err, data) => {
               if (err) throw err;
-              console.log(data)
+              console.log('New Department was added successfully!');
               runSearch()
           })
       })
@@ -147,7 +142,7 @@ const addRole = () => {
         {
           name: 'deptID',
           type: 'input',
-          message: 'What is the new department ID?',
+          message: 'What is the department ID?',
         },
       ])
       .then((answer) => {
